@@ -179,7 +179,6 @@ app.get("/:listName", (req,res)=>{
             res.redirect("/" + customList)
         }else{ 
             //show existing list
-            console.log(resultList.items)
             res.render("list", {listTitle: resultList.name, listItems:resultList.items})
 
             // console.log(resultList.items)
